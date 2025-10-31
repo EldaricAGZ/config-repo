@@ -12,13 +12,9 @@ spring:
           lowerCaseServiceId: true
       routes:
         - id: user-service
-          uri: lb://user-service-with-spring-boot
+          uri: lb://user-service
           predicates:
-            - Path=/users/**
-        - id: notification-service
-          uri: lb://notification-service
-          predicates:
-            - Path=/notifications/**
+            - Path=/api/users/**
 
 eureka:
   client:

@@ -10,18 +10,13 @@ spring:
     port: 587
     username: fortestapp00000001@gmail.com
     password: "testtest00000001"
-    test-connection: true
+    test-connection: false
     properties:
       mail:
         smtp:
           auth: true
           starttls:
             enable: true
-
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://eureka-server:8761/eureka/
 
 kafka:
   bootstrap-servers: kafka:9092
